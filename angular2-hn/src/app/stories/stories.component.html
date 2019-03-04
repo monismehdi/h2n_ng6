@@ -1,0 +1,19 @@
+<div class="main-content">
+  <ol [class.list-margin]="storiesType !== 'jobs'">
+    <!-- <li *ngFor="let item of items; let i = index" class="post"> -->
+        <li *ngFor="let item of items | slice:0:30" class="post">
+
+      <!-- Story # {{i}} -->
+      <item class="item-block" itemId="{{item}}"> </item>
+
+    </li>
+  </ol>
+  <div class="nav">
+    <a href="#" class="prev">
+        ‹ Prev
+    </a>
+    <a href="#" class="more">
+        ‹ More
+    </a>
+  </div>
+</div>
